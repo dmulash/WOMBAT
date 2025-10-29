@@ -1,0 +1,67 @@
+component,type,description,level,materials,scale,shape,time
+blades,failure,minor repair,2.0,407,13.783,1.0,9
+blades,failure,major repair,4.0,3586,314.328,1.0,21
+blades,failure,major replacement,6.0,215219,2694.231,1.0,288
+blades,maintenance,n/a,,0,,,0
+controls,failure,minor repair,2.0,477,18.886,1.0,8
+controls,failure,major repair,4.0,4781,62.09,1.0,14
+controls,failure,major replacement,6.0,31086,2873.832,1.0,12
+controls,maintenance,n/a,,0,,,0
+electrical,failure,minor repair,2.0,238,16.898,1.0,5
+electrical,failure,major repair,4.0,4781,189.081,1.0,14
+electrical,failure,major replacement,6.0,28695,1296.552,1.0,18
+electrical,maintenance,n/a,,0,,,0
+gearbox,failure,minor repair,2.0,275,4.696,1.0,8
+gearbox,failure,major repair,4.0,3855,24.403,1.0,22
+gearbox,failure,major replacement,6.0,550000,18.066,1.0,50
+gearbox,maintenance,n/a,,0,,,0
+generator,failure,minor repair,2.0,381,13.02,1.0,7
+generator,failure,major repair,4.0,8371,9.835,1.0,24
+generator,failure,remote reset,5.0,0,0.09,1.0,6
+generator,failure,major replacement,6.0,143477,28.482,1.0,81
+generator,maintenance,annual turbine inspection,,465,,,24
+hvac,failure,minor repair,2.0,1111,34.076,1.0,5
+hvac,failure,major repair,4.0,3109,462.441,1.0,14
+hvac,maintenance,n/a,,0,,,0
+hub,failure,minor repair,2.0,381,36.169,1.0,10
+hub,failure,major repair,4.0,3586,86.618,1.0,40
+hub,failure,major replacement,6.0,227176,2821.278,1.0,298
+hub,maintenance,n/a,,0,,,0
+lubricant,failure,minor repair,2.0,900,2.457,1.0,8
+lubricant,failure,major repair,4.0,11250,166.667,1.0,22
+lubricant,maintenance,oil change,,11250,,,12
+other,failure,minor repair,2.0,264,7.336,1.0,5
+other,failure,major repair,4.0,5738,70.896,1.0,21
+other,failure,major replacement,6.0,23914,2552.238,1.0,36
+other,maintenance,n/a,,0,,,0
+pitch,failure,minor repair,2.0,502,7.924,1.0,9
+pitch,failure,major repair,4.0,4543,18.246,1.0,19
+pitch,failure,major replacement,6.0,33477,2799.258,1.0,25
+pitch,maintenance,n/a,,0,,,0
+power_supply,failure,minor repair,2.0,576,82.894,1.0,7
+power_supply,failure,major repair,4.0,12676,38.889,1.0,14
+power_supply,failure,major replacement,6.0,31086,540.0,1.0,57
+power_supply,maintenance,n/a,,0,,,0
+relay,failure,minor repair,2.0,623,19.075,1.0,4
+relay,failure,major repair,4.0,5500,57.579,1.0,19
+relay,failure,major replacement,6.0,32281,1332.558,1.0,150
+relay,maintenance,n/a,,0,,,0
+safety,failure,minor repair,2.0,312,18.046,1.0,2
+safety,failure,major repair,4.0,5738,841.519,1.0,7
+safety,maintenance,n/a,,0,,,0
+sensors,failure,minor repair,2.0,359,25.963,1.0,8
+sensors,failure,major repair,4.0,5977,45.808,1.0,6
+sensors,maintenance,n/a,,0,,,0
+service_items,failure,minor repair,2.0,191,56.518,1.0,7
+service_items,maintenance,n/a,,0,,,0
+tower,failure,minor repair,2.0,334,74.445,1.0,5
+tower,failure,major repair,4.0,2629,38.476,1.0,2
+tower,maintenance,n/a,,0,,,0
+xformer,failure,minor repair,2.0,227,115.976,1.0,7
+xformer,failure,major repair,4.0,5500,1005.127,1.0,26
+xformer,failure,major replacement,6.0,167391,2584.614,1.0,1
+xformer,maintenance,n/a,,0,,,0
+yaw,failure,minor repair,2.0,334,38.64,1.0,5
+yaw,failure,major repair,4.0,7176,521.605,1.0,20
+yaw,failure,major replacement,6.0,29756,2682.54,1.0,49
+yaw,maintenance,n/a,,0,,,0

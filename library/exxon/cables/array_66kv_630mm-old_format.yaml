@@ -1,0 +1,19 @@
+name: array cable
+# cost per km 400k / 480k dynamic (from ORBIT)
+maintenance:
+  -
+    description: n/a
+    time: 0
+    materials: 0
+    service_equipment: CTV
+    frequency: 0
+failures:
+    0:
+      scale: 10000
+      shape: 1
+      time: 0
+      materials: 0
+      service_equipment: CTV
+      operation_reduction: 0.0
+      level: 0
+      description: none

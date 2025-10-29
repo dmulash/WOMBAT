@@ -1,0 +1,23 @@
+name: Large Crane 2
+equipment_rate: 3780
+capability: LCN
+speed: 2
+strategy: requests
+max_windspeed_transport: 10
+max_windspeed_repair: 10
+max_waveheight_transport: 2 # not relevant for LBW, but is a required input
+max_waveheight_repair: 2
+onsite: false
+mobilization_cost: 185000
+mobilization_days: 10
+workday_start: 7
+workday_end: 16
+strategy_threshold: 1
+charter_days: 6
+crew_transfer_time: 0.25
+n_crews: 1
+crew:
+  day_rate: 0
+  n_day_rate: 0  
+  hourly_rate: 0
+  n_hourly_rate: 0

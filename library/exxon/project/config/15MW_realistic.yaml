@@ -1,0 +1,14 @@
+name: 15MW_realistic
+library: exxon
+weather: TX_south_ocean_20yrs.csv
+service_equipment: [ctv1.yaml, ctv2.yaml, hlv1.yaml, hlv2.yaml, rmt.yaml]
+layout: 15MW_real_layout.csv
+inflation_rate: 0
+fixed_costs: fixed_costs_osw.yaml
+workday_start: 7
+workday_end: 19
+start_year: 2017
+end_year: 2026
+project_capacity: 450
+
+

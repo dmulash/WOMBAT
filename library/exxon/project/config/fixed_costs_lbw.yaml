@@ -1,0 +1,7 @@
+operations_management_administration: 12  # all non-labor fixed costs
+insurance: 0
+annual_leases_fees: 0
+operating_facilities: 0
+environmental_health_safety_monitoring: 0
+onshore_electrical_maintenance: 0
+labor: 5.65 # $70,000 per technician, 1 tech per 12.5 MW

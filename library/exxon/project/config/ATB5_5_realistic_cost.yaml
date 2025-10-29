@@ -1,0 +1,14 @@
+name: ATB5_5_realistic
+library: exxon
+weather: WY_southern_flat_lands_20yrs.csv
+service_equipment: [truck1.yaml, truck2.yaml, truck3.yaml, crane1.yaml, crane2.yaml, rmt.yaml]
+layout: ATB5_5_real_cost_layout.csv
+inflation_rate: 0
+fixed_costs: fixed_costs_lbw.yaml
+workday_start: 7
+workday_end: 19
+start_year: 2017
+end_year: 2036
+project_capacity: 143
+
+
