@@ -1,0 +1,4 @@
+component,type,description,level,materials,scale,shape,time
+transformer,failure,minor repair,2.0,575,5.0,1.0,12
+transformer,failure,major repair,4.0,28800,100.0,1.0,60
+transformer,maintenance,annual inspection,,144,,,24

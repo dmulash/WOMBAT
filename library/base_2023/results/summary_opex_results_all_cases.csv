@@ -1,0 +1,19 @@
+,Units,Osw 15-Mw Mean,Osw 15-Mw Std,Lbw 5 5-Mw Mean,Lbw 5 5-Mw Std,Lbw Ge 1 5-Mw Mean,Lbw Ge 1 5-Mw Std,Lbw 3 3-Mw Mean,Lbw 3 3-Mw Std,Lbw 3 3-Mw 2023 Usd Mean,Lbw 3 3-Mw 2023 Usd Std
+Project Capacity,MW,450.0,-,143.0,-,60.0,-,201.3,-,201.3,-
+Avg Time Based Availability,%,93.9,0.1,95.8,0.1,96.6,0.1,95.6,0.1,95.4,0.1
+Avg Production Based Availability,%,93.6,0.2,95.6,0.1,96.6,0.1,95.3,0.1,92.3,0.3
+Operations,$ / kW-yr,37.9,0.0,17.7,0.0,17.7,0.0,17.7,0.0,25.4,0.0
+Port Fees,$ / kW-yr,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Total Labor Cost,$ / kW-yr,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Materials Cost,$ / kW-yr,12.2,4.8,7.1,4.3,7.2,3.6,6.5,2.6,8.7,1.1
+Equipment Cost,$ / kW-yr,25.3,8.4,4.1,2.3,12.3,5.5,5.5,1.8,9.1,0.5
+  - Crew Transfer Vessel 1,$ / kW-yr,2.0,0.0,-,-,-,-,-,-,-,-
+  - Crew Transfer Vessel 2,$ / kW-yr,2.0,0.0,-,-,-,-,-,-,-,-
+  - Jack-Up Vessel 1,$ / kW-yr,10.8,5.0,-,-,-,-,-,-,-,-
+  - Jack-Up Vessel 2,$ / kW-yr,10.4,4.7,-,-,-,-,-,-,-,-
+  - Large Crane 1,$ / kW-yr,-,-,2.0,1.4,6.0,3.2,2.7,1.1,4.5,1.4
+  - Large Crane 2,$ / kW-yr,-,-,2.0,1.4,5.9,3.2,2.7,1.1,4.4,1.3
+  - Truck 1,$ / kW-yr,-,-,0.1,0.0,0.1,0.0,0.0,0.0,0.0,0.0
+  - Truck 2,$ / kW-yr,-,-,0.1,0.0,0.1,0.0,0.0,0.0,0.0,0.0
+  - Truck 3,$ / kW-yr,-,-,0.1,0.0,0.1,0.0,0.0,0.0,0.0,0.0
+Opex Total,$ / kW-yr,75.4,12.6,28.9,6.2,37.1,8.6,29.7,4.0,43.2,1.2

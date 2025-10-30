@@ -1,0 +1,563 @@
+capacity_kw: 3300
+capex_kw: 915
+power_curve:
+  file: ATB3_3_SAM.csv
+  bin_width: 0.25
+blades:
+  name: blade
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 13.783
+    shape: 1
+    time: 9
+    materials: 244.2  # 407 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 314.328
+    shape: 1
+    time: 21
+    materials: 2151.6  # 3586 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 2694.231
+    shape: 1
+    time: 288
+    materials: 129131.4  # 215219 * 0.6
+    service_equipment: LCN
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
+controls:
+  name: controls
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 18.886
+    shape: 1
+    time: 8
+    materials: 286.2  # 477 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 62.09
+    shape: 1
+    time: 14
+    materials: 2868.6  # 4781 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 2873.832
+    shape: 1
+    time: 12
+    materials: 18651.6  # 31086 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
+electrical:
+  name: electrical
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 16.898
+    shape: 1
+    time: 5
+    materials: 142.8  # 238 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 189.081
+    shape: 1
+    time: 14
+    materials: 2868.6  # 4781 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 1296.552
+    shape: 1
+    time: 18
+    materials: 17217  # 28695 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
+gearbox:
+  name: gearbox
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 4.696
+    shape: 1
+    time: 8
+    materials: 165  # 275 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 24.403
+    shape: 1
+    time: 22
+    materials: 2313  # 3855 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 18.066
+    shape: 1
+    time: 50
+    materials: 330000  # 550000 * 0.6
+    service_equipment: LCN
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
+generator:
+  name: generator
+  maintenance:
+  - description: annual turbine inspection
+    time: 24
+    materials: 279  # 465 * 0.6
+    service_equipment: CTV
+    frequency: 365
+  failures:
+  - scale: 13.02
+    shape: 1
+    time: 7
+    materials: 228.6  # 381 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0.0
+    level: 2
+    description: minor repair
+  - scale: 9.835
+    shape: 1
+    time: 24
+    materials: 5022.6  # 8371 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0.0
+    level: 4
+    description: major repair
+  - scale: 0.09
+    shape: 1
+    time: 6
+    materials: 0
+    service_equipment: RMT
+    operation_reduction: 0
+    level: 5
+    description: remote reset
+  - scale: 28.482
+    shape: 1
+    time: 81
+    materials: 86086.2  # 143477 * 0.6
+    service_equipment: LCN
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
+hvac:
+  name: heating_cooling
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 34.076
+    shape: 1
+    time: 5
+    materials: 666.6  # 1111 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 462.441
+    shape: 1
+    time: 14
+    materials: 1865.4  # 3109 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+hub:
+  name: hub
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 36.169
+    shape: 1
+    time: 10
+    materials: 228.6  # 381 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 86.618
+    shape: 1
+    time: 40
+    materials: 2151.6  # 3586 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 2821.278
+    shape: 1
+    time: 298
+    materials: 136305.6  # 227176 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
+lubricant:
+  name: lubricant
+  maintenance:
+  - description: oil change
+    time: 12
+    materials: 6750  # 11250 * 0.6
+    service_equipment: CTV
+    frequency: 1735
+  failures:
+  - scale: 2.457
+    shape: 1
+    time: 8
+    materials: 540  # 900 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 166.667
+    shape: 1
+    time: 22
+    materials: 6750  # 11250 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+other:
+  name: other
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 7.336
+    shape: 1
+    time: 5
+    materials: 158.4  # 264 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 70.896
+    shape: 1
+    time: 21
+    materials: 3442.8  # 5738 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 2552.238
+    shape: 1
+    time: 36
+    materials: 14348.4  # 23914 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    replacement: true
+    level: 6
+    description: major replacement
+pitch:
+  name: pitch
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 7.924
+    shape: 1
+    time: 9
+    materials: 301.2  # 502 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 18.246
+    shape: 1
+    time: 19
+    materials: 2725.8  # 4543 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 2799.258
+    shape: 1
+    time: 25
+    materials: 20086.2  # 33477 * 0.6
+    service_equipment: LCN
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
+power_supply:
+  name: power_supply
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 82.894
+    shape: 1
+    time: 7
+    materials: 345.6  # 576 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 38.889
+    shape: 1
+    time: 14
+    materials: 7605.6  # 12676 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 540
+    shape: 1
+    time: 57
+    materials: 18651.6  # 31086 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
+relay:
+  name: relay
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 19.075
+    shape: 1
+    time: 4
+    materials: 373.8  # 623 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 57.579
+    shape: 1
+    time: 19
+    materials: 3300  # 5500 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 1332.558
+    shape: 1
+    time: 150
+    materials: 19368.6  # 32281 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
+safety:
+  name: safety_system
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 18.046
+    shape: 1
+    time: 2
+    materials: 187.2  # 312 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 841.519
+    shape: 1
+    time: 7
+    materials: 3442.8  # 5738 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+sensors:
+  name: sensors
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 25.963
+    shape: 1
+    time: 8
+    materials: 215.4  # 359 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 45.808
+    shape: 1
+    time: 6
+    materials: 3586.2  # 5977 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+service_items:
+  name: service_items
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 56.518
+    shape: 1
+    time: 7
+    materials: 114.6  # 191 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+tower:
+  name: tower
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 74.445
+    shape: 1
+    time: 5
+    materials: 200.4  # 334 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 38.476
+    shape: 1
+    time: 2
+    materials: 1577.4  # 2629 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+xformer:
+  name: WTtransformer
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 115.976
+    shape: 1
+    time: 7
+    materials: 136.2  # 227 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 1005.127
+    shape: 1
+    time: 26
+    materials: 3300  # 5500 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 2584.614
+    shape: 1
+    time: 1
+    materials: 100434.6  # 167391 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
+yaw:
+  name: yaw
+  maintenance:
+  - description: n/a
+    time: 0
+    materials: 0
+    service_equipment: RMT
+    frequency: 0
+  failures:
+  - scale: 38.64
+    shape: 1
+    time: 5
+    materials: 200.4  # 334 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: minor repair
+  - scale: 521.605
+    shape: 1
+    time: 20
+    materials: 4305.6  # 7176 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 4
+    description: major repair
+  - scale: 2682.54
+    shape: 1
+    time: 49
+    materials: 17853.6  # 29756 * 0.6
+    service_equipment: CTV
+    operation_reduction: 0.02
+    replacement: true
+    level: 6
+    description: major replacement
