@@ -37,6 +37,7 @@ class EquipmentClass(StrEnum):
     SCN = "SCN", "Small crane"
     MCN = "MCN", "Medium crane"
     LCN = "LCN", "Large crane"
+    LCN_1mo_miba = "LCN_1mo_miba", "MIBA replacements"
     CAB = "CAB", "Cabling equipment"
     RMT = "RMT", "Remote reset or anything performed remotely"
     DRN = "DRN", "Drone"
@@ -1897,6 +1898,7 @@ class StrategyMap:
     SCN: list[EquipmentMap] = field(factory=list)
     MCN: list[EquipmentMap] = field(factory=list)
     LCN: list[EquipmentMap] = field(factory=list)
+    LCN_1mo_miba: list[EquipmentMap] = field(factory=list)
     CAB: list[EquipmentMap] = field(factory=list)
     RMT: list[EquipmentMap] = field(factory=list)
     DRN: list[EquipmentMap] = field(factory=list)
@@ -1944,6 +1946,8 @@ class StrategyMap:
                 self.MCN.append(EquipmentMap(threshold, equipment))  # type: ignore [call-arg]
             case EquipmentClass.LCN:
                 self.LCN.append(EquipmentMap(threshold, equipment))  # type: ignore [call-arg]
+            case EquipmentClass.LCN_1mo_miba:
+                self.LCN_1mo_miba.append(EquipmentMap(threshold, equipment))  # type: ignore [call-arg]
             case EquipmentClass.CAB:
                 self.CAB.append(EquipmentMap(threshold, equipment))  # type: ignore [call-arg]
             case EquipmentClass.RMT:
@@ -1991,6 +1995,8 @@ class StrategyMap:
                 return self.MCN
             case EquipmentClass.LCN:
                 return self.LCN
+            case EquipmentClass.LCN_1mo_miba:
+                return self.LCN_1mo_miba
             case EquipmentClass.CAB:
                 return self.CAB
             case EquipmentClass.RMT:
@@ -2035,6 +2041,8 @@ class StrategyMap:
                 self.LCN.append(self.MCN.pop(ix))
             case EquipmentClass.LCN:
                 self.LCN.append(self.LCN.pop(ix))
+            case EquipmentClass.LCN_1mo_miba:
+                self.LCN_1mo_miba.append(self.LCN_1mo_miba.pop(ix))
             case EquipmentClass.CAB:
                 self.CAB.append(self.CAB.pop(ix))
             case EquipmentClass.RMT:
