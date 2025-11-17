@@ -165,3 +165,4 @@ ENV/
 
 # Example files & data
 *.zip
+"library/base_2023/results/" 
