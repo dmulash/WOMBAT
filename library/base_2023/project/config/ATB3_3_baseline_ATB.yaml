@@ -1,0 +1,14 @@
+name: ATB3_3_baseline_ATB
+library: base_2023
+weather: WY_southern_flat_lands_30yrs.csv
+service_equipment: [truck1.yaml, truck2.yaml, truck3.yaml, crane1.yaml, crane2.yaml, craneMB.yaml, rmt.yaml]
+layout: ATB3_3_baseline_ATB.csv
+inflation_rate: 0
+fixed_costs: fixed_costs_lbw.yaml
+workday_start: 7
+workday_end: 19
+start_year: 2017
+end_year: 2046
+project_capacity: 201.3
+
+

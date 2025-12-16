@@ -15,7 +15,7 @@ start_day: 1
 end_month: 12
 end_day: 31
 start_year: 2017
-end_year: 2036
+end_year: 2046
 crew_transfer_time: 0
 n_crews: 1
 crew:

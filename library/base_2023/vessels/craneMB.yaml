@@ -1,5 +1,6 @@
 name: Large Crane for MB
-equipment_rate: 3780
+#equipment_rate: 3780
+equipment_rate: 10584
 capability: LCN_1mo_miba
 speed: 2
 strategy: requests
@@ -8,13 +9,15 @@ max_windspeed_repair: 10
 max_waveheight_transport: 2 # not relevant for LBW, but is a required input
 max_waveheight_repair: 2
 onsite: false
-mobilization_cost: 185000
+#mobilization_cost: 185000
+mobilization_cost: 518000
 mobilization_days: 30 # 1 mo of mobilization time
 workday_start: 7
-workday_end: 16
+workday_end: 19
 strategy_threshold: 1
 charter_days: 6
-crew_transfer_time: 0.25
+#crew_transfer_time: 0.25
+crew_transfer_time: 0  # set to 0 so that work is exactly 7 workdays (including crew transfer)
 n_crews: 1
 crew:
   day_rate: 0
