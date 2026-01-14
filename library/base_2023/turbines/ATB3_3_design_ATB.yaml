@@ -32,8 +32,8 @@ main_bearing_failures:
     service_equipment: RMT
     frequency: 0
   failures:
-  - scale: 93.423 # slide 5, EPRI WinNER Replacement Rates
-    shape: 1.151 # slide 5, EPRI WinNER Replacement Rates
+  - scale: 189.042 # 10% at 20 years, beta = 1
+    shape: 1 # 10% at 20 years, beta = 1
     time: 84 # 1 week downtime for swap (7 workdays = 7 x 12h = 84h)
     materials: 60000   
     #materials: 656410  # number includes labor, crane costs, parts (900k minus 185k for crane mob - 3.78k day rate x (84h for repair + 288h [based on avearge weather, waiting for next work shift, and other delays] for delays) / 24h = 688.54k)
