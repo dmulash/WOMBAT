@@ -35,7 +35,7 @@ main_bearing_failures:
   - scale: 93.423 # slide 5, EPRI WinNER Replacement Rates
     shape: 1.151 # slide 5, EPRI WinNER Replacement Rates
     time: 84 # 1 week downtime for swap (7 workdays = 7 x 12h = 84h)
-    materials: 200000   
+    materials: 60000   
     #materials: 656410  # number includes labor, crane costs, parts (900k minus 185k for crane mob - 3.78k day rate x (84h for repair + 288h [based on avearge weather, waiting for next work shift, and other delays] for delays) / 24h = 688.54k)
     # check logs, is it 3.78k x 84h /24h or 3.78 x 7 days what I should use?
     service_equipment: LCN_1mo_miba # (use crane with 1 mo mobilization, and 0 cost)
