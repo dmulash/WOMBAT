@@ -9,11 +9,11 @@ main_bearing_maintenance:
     # any solution for labor as we are assuming a general fixed cost for labor based on muber of technicians and annual fixed wage?
   - description: minor scheduled repair
     time: 6  # half a workday (each shift is 12h)
-    materials: 4000 # for regreasing, team of 2-3 techs, 1/2 day, approx $4000-5000, so I think this includes labor
+    materials: 400 # for regreasing, team of 2-3 techs, 1/2 day, approx $4000-5000, so I think this includes labor
     service_equipment: CTV
-    frequency: 1 # 1 year
-    frequency_basis: date-years
-    start_date: 01/15/2018
+    frequency: 6 # 6 months
+    frequency_basis: date-months
+    start_date: 07/01/2017
   failures:
   - scale: 0
     shape: 0

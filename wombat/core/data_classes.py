@@ -38,6 +38,9 @@ class EquipmentClass(StrEnum):
     MCN = "MCN", "Medium crane"
     LCN = "LCN", "Large crane"
     LCN_1mo_miba = "LCN_1mo_miba", "MIBA replacements"
+    LCN_1mo_miba_lower_cost = "LCN_1mo_miba_lower_cost", "MIBA lower cost replacements"
+    LCN_1mo_miba_slower = "LCN_1mo_miba_slower", "MIBA slower replacements"
+    LCN_absent = "LCN_absent", "No Replacements"
     CAB = "CAB", "Cabling equipment"
     RMT = "RMT", "Remote reset or anything performed remotely"
     DRN = "DRN", "Drone"
@@ -1899,6 +1902,9 @@ class StrategyMap:
     MCN: list[EquipmentMap] = field(factory=list)
     LCN: list[EquipmentMap] = field(factory=list)
     LCN_1mo_miba: list[EquipmentMap] = field(factory=list)
+    LCN_1mo_miba_lower_cost: list[EquipmentMap] = field(factory=list)
+    LCN_1mo_miba_slower: list[EquipmentMap] = field(factory=list)
+    LCN_absent: list[EquipmentMap] = field(factory=list)
     CAB: list[EquipmentMap] = field(factory=list)
     RMT: list[EquipmentMap] = field(factory=list)
     DRN: list[EquipmentMap] = field(factory=list)
@@ -1948,6 +1954,12 @@ class StrategyMap:
                 self.LCN.append(EquipmentMap(threshold, equipment))  # type: ignore [call-arg]
             case EquipmentClass.LCN_1mo_miba:
                 self.LCN_1mo_miba.append(EquipmentMap(threshold, equipment))  # type: ignore [call-arg]
+            case EquipmentClass.LCN_1mo_miba_lower_cost:
+                self.LCN_1mo_miba_lower_cost.append(EquipmentMap(threshold, equipment))  # type: ignore [call-arg]
+            case EquipmentClass.LCN_1mo_miba_slower:
+                self.LCN_1mo_miba_slower.append(EquipmentMap(threshold, equipment))  # type: ignore [call-arg]
+            case EquipmentClass.LCN_absent:
+                self.LCN_absent.append(EquipmentMap(threshold, equipment))  # type: ignore [call-arg]
             case EquipmentClass.CAB:
                 self.CAB.append(EquipmentMap(threshold, equipment))  # type: ignore [call-arg]
             case EquipmentClass.RMT:
@@ -1997,6 +2009,12 @@ class StrategyMap:
                 return self.LCN
             case EquipmentClass.LCN_1mo_miba:
                 return self.LCN_1mo_miba
+            case EquipmentClass.LCN_1mo_miba_lower_cost:
+                return self.LCN_1mo_miba_lower_cost
+            case EquipmentClass.LCN_1mo_miba_slower:
+                return self.LCN_1mo_miba_slower
+            case EquipmentClass.LCN_absent:
+                return self.LCN_absent
             case EquipmentClass.CAB:
                 return self.CAB
             case EquipmentClass.RMT:
@@ -2043,6 +2061,12 @@ class StrategyMap:
                 self.LCN.append(self.LCN.pop(ix))
             case EquipmentClass.LCN_1mo_miba:
                 self.LCN_1mo_miba.append(self.LCN_1mo_miba.pop(ix))
+            case EquipmentClass.LCN_1mo_miba_lower_cost:
+                self.LCN_1mo_miba_lower_cost.append(self.LCN_1mo_miba_lower_cost.pop(ix))
+            case EquipmentClass.LCN_1mo_miba_slower:
+                self.LCN_1mo_miba_slower.append(self.LCN_1mo_miba_slower.pop(ix))
+            case EquipmentClass.LCN_absent:
+                self.LCN_absent.append(self.LCN_absent.pop(ix))
             case EquipmentClass.CAB:
                 self.CAB.append(self.CAB.pop(ix))
             case EquipmentClass.RMT:

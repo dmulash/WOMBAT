@@ -158,6 +158,10 @@ ENV/
 /library/code_comparison/iea26/results
 /library/corewind/results
 /tests/library/results
+library/base_2023/results/
+examples/*events.csv
+*.csv
+*.pqt
 
 # Text editors
 .vscode/

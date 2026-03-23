@@ -3,17 +3,35 @@ capex_kw: 1091
 power_curve:
   file: ATB3_3_SAM.csv
   bin_width: 0.25
+main_bearing_installation:
+  name: main_bearing_installation
+  maintenance:  
+  - description: scheduled main bearing replacement # conventional removed, miba bearing in
+    time: 84 # 1 week downtime for swap (7 workdays = 7 x 12h = 84h)
+    materials: 90000   
+    service_equipment: LCN_1mo_miba # (use crane with 1 mo mobilization, and 0 cost)
+    frequency: 30 # just happens one time during the simulation (30 yrs > 25 yrs)
+    frequency_basis: date-years
+    start_date: 01/02/2017
+  failures:
+  - scale: 0
+    shape: 0
+    time: 0
+    materials: 0
+    service_equipment: CTV
+    operation_reduction: 0.0
+    level: 1
+    description: n/a
 main_bearing_maintenance:
   name: main_bearing_maintenance
   maintenance:
-    # any solution for labor as we are assuming a general fixed cost for labor based on muber of technicians and annual fixed wage?
   - description: minor scheduled repair
-    time: 6  # half a workday (each shift is 12h)
-    materials: 400 # for regreasing, team of 2-3 techs, 1/2 day, approx $4000-5000, so I think this includes labor
+    time: 6 # half a workday (each shift is 12h)
+    materials: 2500 # (for oil change), no labor
     service_equipment: CTV
-    frequency: 6 # 6 months
-    frequency_basis: date-months
-    start_date: 07/01/2017
+    frequency: 6 # 6 years
+    frequency_basis: date-years
+    start_date: 01/15/2023
   failures:
   - scale: 0
     shape: 0
@@ -32,17 +50,14 @@ main_bearing_failures:
     service_equipment: RMT
     frequency: 0
   failures:
-  - scale: 93.423 # slide 5, EPRI WinNER Replacement Rates
-    shape: 1.151 # slide 5, EPRI WinNER Replacement Rates
-    time: 84 # 1 week downtime for swap (7 workdays = 7 x 12h = 84h)
-    materials: 60000   
-    #materials: 656410  # number includes labor, crane costs, parts (900k minus 185k for crane mob - 3.78k day rate x (84h for repair + 288h [based on avearge weather, waiting for next work shift, and other delays] for delays) / 24h = 688.54k)
-    # check logs, is it 3.78k x 84h /24h or 3.78 x 7 days what I should use?
-    service_equipment: LCN_1mo_miba_slower # (use crane with 1 mo mobilization, and 0 cost)
-    operation_reduction: 1.00 # assumed curtailed 100% because of the failure
+  - scale: 189.042 # 10% at 20 years, beta = 1
+    shape: 1 # 10% at 20 years, beta = 1
+    time: 12 # 1 workday
+    materials: 46500 # (for large series set + oil change), no labor, just parts
+    service_equipment: CTV
+    operation_reduction: 1.00  # 100% curtailment for major repair??
     level: 6
-    description: major replacement
-    replacement: true
+    description: major repair
 blades:
   name: blades
   maintenance:
